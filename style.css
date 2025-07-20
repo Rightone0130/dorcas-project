@@ -8,6 +8,8 @@ font-family: sans-serif;
 
 padding-left: 4.5em;
 padding-right: 5.5em;
+position: sticky;
+top: 0;
 
 
 
@@ -32,7 +34,11 @@ padding-right: 5.5em;
     justify-content: space-evenly;
 }
 body{
-    background-color: rgb(210, 210, 17);
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    /* box-sizing: border-box; */
+    /* overflow: hidden; */
+width: 100%;
 }
  .webLogo{
     width: 3em;
@@ -43,15 +49,80 @@ body{
 }
 .carousel {
     background-image: url('/images/DSC8955.JPG');
-    width: 110%;
+    width: 100%;
     height: auto;
     
     display: block;
-    margin-left: -2%;
+    margin-left: 0%;
     margin-right: -5%;
+
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
 
 }
 
 .hero{
-    margin-top: -600%;
+    transform: translateY(12.5rem); 
+    margin-bottom: -21rem;
+z-index: 2;
+font-size: 7em;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+position: relative;
+
+top: 0;  /* or wherever you want it */
+
+
 }
+.aboutUsHome{
+ padding: 4rem;
+    /* margin-top: 23%; */
+background-color: rgb(186, 129, 22);
+display: flex;
+color: white;
+justify-items: auto;
+}
+.aboutUsHomeHeader {
+    font-size: 1.8em;
+    margin-left: 2em;
+    border-bottom: 5px solid black;
+    margin-right: 1.5em;
+    text-align: left;
+    width: 73em;
+    padding-bottom: 0;
+    height: fit-content;
+  }
+  .aboutUsHomeBody{
+    font-size: 1.1em;
+  }
+
+  .whyAcademics{
+    padding: 4rem;
+       /* margin-top: 23%; */
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   color: rgb(84, 70, 70);
+   flex-direction: column;
+   align-items: center;
+   
+   
+   }
+   .whyAcademicsHeader {
+       font-size: 1.8em;
+       margin-left: 2em;
+       border-bottom: 5px solid rgb(186, 129, 22);
+       margin-right: 1.5em;
+       text-align: left;
+       width: fit-content;
+       padding-bottom: 0;
+       height: fit-content;
+       color: black;
+       margin-bottom: 3rem;
+
+     }
+     .whyAcademicsBody{
+       font-size: 1.1em;
+     }
