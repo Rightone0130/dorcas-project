@@ -134,9 +134,19 @@ justify-items: auto;
    .accCard{
      /* font-size: 1.1em; */
      border: 1.6px solid rgba(0, 0, 0, 0.243);
-     padding: 1.5em;
+     padding: 3.5em 1.5em 2.7em 1.5em;
      margin-left: 1em;
      margin-right: 1em;
      text-align: center;
+   }
+
+   .learnButton{
+
+    padding: 0.6em 0.8em 0.6em 0.8em;
+    background-color:  rgb(186, 129, 22);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    
    }
   
