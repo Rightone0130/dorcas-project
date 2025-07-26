@@ -1,11 +1,11 @@
 .mainNav{
-    display: flex;
-    color: black;
+  display: flex;
+  color: black;
 margin: -0.5rem;
 padding: 2rem;
-    background-color: white;
+  background-color: white;
 font-family: sans-serif;
-
+z-index: 100;
 padding-left: 4.5em;
 padding-right: 5.5em;
 position: sticky;
@@ -16,56 +16,56 @@ top: 0;
 }
 
 .navBar {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    padding-left: 8em;
-    
-    
-  }
-  .navLink{
-    cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  padding-left: 8em;
+  
+  
+}
+.navLink{
+  cursor: pointer;
 
-  }
+}
 
 .socialBar{
-    display: flex;
-    width: 10%;
-    justify-content: space-evenly;
+  display: flex;
+  width: 10%;
+  justify-content: space-evenly;
 }
 body{
-    background-color: rgb(255, 255, 255);
-    font-family: sans-serif;
-    /* box-sizing: border-box; */
-    /* overflow: hidden; */
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
 width: 100%;
 }
- .webLogo{
-    width: 3em;
-    margin-top: -1%;
-    margin-bottom: -1%;
+.webLogo{
+  width: 3em;
+  margin-top: -1%;
+  margin-bottom: -1%;
 
 
 }
 .carousel {
-    background-image: url('/images/DSC8955.JPG');
-    width: 100%;
-    height: auto;
-    
-    display: block;
-    margin-left: 0%;
-    margin-right: -5%;
+  background-image: url('/images/DSC8955.JPG');
+  width: 100%;
+  height: auto;
+  
+  display: block;
+  margin-left: 0%;
+  margin-right: -5%;
 
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
 
 }
 
 .hero{
-    transform: translateY(12.5rem); 
-    margin-bottom: -21rem;
+  transform: translateY(12.5rem); 
+  margin-bottom: -21rem;
 z-index: 2;
 font-size: 7em;
 color: rgb(255, 255, 255);
@@ -78,51 +78,65 @@ top: 0;  /* or wherever you want it */
 
 }
 .aboutUsHome{
- padding: 4rem;
-    /* margin-top: 23%; */
+padding: 4rem;
+  /* margin-top: 23%; */
 background-color: rgb(186, 129, 22);
 display: flex;
 color: white;
 justify-items: auto;
 }
 .aboutUsHomeHeader {
-    font-size: 1.8em;
-    margin-left: 2em;
-    border-bottom: 5px solid black;
-    margin-right: 1.5em;
-    text-align: left;
-    width: 73em;
-    padding-bottom: 0;
-    height: fit-content;
-  }
-  .aboutUsHomeBody{
-    font-size: 1.1em;
-  }
+  font-size: 1.8em;
+  margin-left: 2em;
+  border-bottom: 5px solid black;
+  margin-right: 1.5em;
+  text-align: left;
+  width: 73em;
+  padding-bottom: 0;
+  height: fit-content;
+}
+.aboutUsHomeBody{
+  font-size: 1.1em;
+}
 
-  .whyAcademics{
-    padding: 4rem;
-       /* margin-top: 23%; */
-   background-color: rgb(255, 255, 255);
-   display: flex;
-   color: rgb(84, 70, 70);
-   flex-direction: column;
-   align-items: center;
-   
-   
+.whyAcademics{
+  padding: 4rem;
+     /* margin-top: 23%; */
+ background-color: rgb(255, 255, 255);
+ display: flex;
+ color: rgb(84, 70, 70);
+ flex-direction: column;
+ align-items: center;
+ 
+ 
+ }
+ .whyAcademicsHeader {
+     font-size: 1.8em;
+     margin-left: 2em;
+     border-bottom: 5px solid rgb(186, 129, 22);
+     margin-right: 1.5em;
+     text-align: left;
+     width: fit-content;
+     padding-bottom: 0;
+     height: fit-content;
+     color: black;
+     margin-bottom: 3rem;
+     cursor: pointer;
+
    }
-   .whyAcademicsHeader {
-       font-size: 1.8em;
-       margin-left: 2em;
-       border-bottom: 5px solid rgb(186, 129, 22);
-       margin-right: 1.5em;
-       text-align: left;
-       width: fit-content;
-       padding-bottom: 0;
-       height: fit-content;
-       color: black;
-       margin-bottom: 3rem;
 
-     }
-     .whyAcademicsBody{
-       font-size: 1.1em;
-     }
+   .whyAcademicsCardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .accCard{
+     /* font-size: 1.1em; */
+     border: 1.6px solid rgba(0, 0, 0, 0.243);
+     padding: 1.5em;
+     margin-left: 1em;
+     margin-right: 1em;
+     text-align: center;
+   }
+  
