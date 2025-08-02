@@ -279,15 +279,6 @@ body {
   text-align: left;
 }
 
-/* .learnButton{
-    
-        padding: 0.6em 0.8em 0.6em 0.8em;
-        background-color:  rgb(186, 129, 22);
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
-        
-       } */
 
 .philCard {
   /* font-size: 1.1em; */
@@ -299,18 +290,21 @@ body {
 }
 
 .homeBlog {
-  padding: 4rem 2rem; /* was 4rem 9rem */
+  padding: 4em 9em; /* was 4rem 9rem */
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* <-- Important for responsiveness */
-  gap: 2em;       /* Optional: spacing between children */
+  flex-wrap: nowrap; /* <-- Important for responsiveness */
+  gap: 0.7em;       /* Optional: spacing between children */
   overflow-x: hidden; /* just in case */
 }
 .homeBlog > div {
   flex: 1 1 300px; /* allows shrinking and wrapping */
   max-width: 500px;
+}
+
+.homeBlogHeadSection{
+padding-bottom: 3em;
+
 }
 
 
@@ -324,12 +318,21 @@ body {
   cursor: default;
 }
 .newsUpdate {
-  max-width: 50%;
+  max-width: 30%;
 }
 .homeBloglink {
   cursor: pointer;
   text-decoration: none;
   color: rgb(164, 114, 22);
+}
+
+.campusVideos{
+  margin-left: 1em;
+  padding: 0;
+display: flex;
+justify-content: start;
+flex-direction: column;
+
 }
 
 
@@ -341,26 +344,119 @@ body {
   height: fit-content;
   color: black;
   cursor: default;
+  white-space: nowrap;
+  
+}
+
+.newsCardSection{
+
+  min-width: 20em;
+  padding-top: 6.38em;
+  
 }
 
 
 .newsCardProfileCont {
   display: flex;
   flex-direction: row;
+
+}
+
+.newscardMainImage{
+  background-color: aquamarine;
+  min-width: 19.2em;
+  height: 12em;
+  margin-right: 1em;
+  /* margin-top: .7em; */
 }
 
 .newscardimage {
   background-color: aquamarine;
-  max-width: 3.5em;
-  height: 3.5em;
+  max-width: 6.2em;
+  height: 6em;
   margin-right: 1em;
-  border-radius: 100%;
 }
 
 .newsCardPrfNameCont h3 {
-  margin: 0;
+  margin: 0 1 0 0;
 }
-.newsCardPrfNameCont p {
-  margin-top: 0.4em;
+.newsCardLink {
+  font-family: serif;
+font-weight: 400;
+color: rgb(87, 97, 106);
+cursor: pointer;
+  margin-bottom: 500% !important;
 }
+
+.campusVidIcons{
+  height: 10em;
+  margin-bottom: 2em;
+}
+
+
+.subscribeSection {
+  position: relative;
+  padding: 7rem 5rem;
+  background-image: url(/images/DSC_8949.JPG);
+  background-size: cover; /* Makes image fill the container */
+  background-position: center; /* Keeps image centered */
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-color: rgb(186, 129, 22);
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  z-index: 0;
+  color: rgb(247, 247, 247);
+}
+
+.subscribeSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(61, 52, 16, 0.787); /* grey with 50% transparency */
+  z-index: -1; /* Put the overlay behind the content */
+}
+
+.subscribeHeader {
+  font-size: 2.2em;
+  margin-left: 2em;
+  margin-right: 1.5em;
+  text-align: left;
+  width: fit-content;
+  padding-bottom: 0;
+  height: fit-content;
+  color: white;
+  margin-bottom: 3rem;
+  cursor: default;
+}
+
+
+.subscribeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.subscribeCard {
+  padding: 3.5em 1.5em 2.7em 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
+
+
+.subCard {
+  /* font-size: 1.1em; */
+  /* border: 1.6px solid rgba(0, 0, 0, 0.243); */
+  padding: 3.5em 1.5em 2.7em 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
+
 
