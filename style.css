@@ -49,17 +49,34 @@ body {
   background-image: url("/images/DSC8955.JPG");
   width: 100%;
   height: auto;
-  display: block;
+  margin-top: 0;
+  /* display: block; */
   margin-left: 0%;
-  margin-right: -5%;
+  /* margin-right: -5%; */
   max-width: 100%;
+  padding: 17em 0 11em 0;
   box-sizing: border-box;
   flex-shrink: 0;
+  position: relative;
+  background-size: 100% auto;
+  z-index: 0;
+  background-position: center;
+}
+.carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(61, 52, 16, 0.523);
+  z-index: 1;
 }
 
+
 .hero {
-  transform: translateY(12.5rem);
-  margin-bottom: -21rem;
+  /* transform: translateY(12.5rem); */
+  /* margin-bottom: -21rem; */
   z-index: 2;
   font-size: 7em;
   color: rgb(255, 255, 255);
@@ -67,6 +84,7 @@ body {
   justify-content: center;
   position: relative;
   top: 0;
+  margin: 0;
 }
 
 .aboutUsHome {
@@ -465,3 +483,128 @@ footer {
   margin-right: 1em;
   text-align: left;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .mainNav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navBar, .socialBar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navBar {
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+
+  .socialBar {
+    margin-top: 1em;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    font-size: 2.5em;
+    text-align: center;
+    transform: none;
+    margin-bottom: 2rem;
+  }
+
+  .carousel {
+    width: 100%;
+    margin: 0;
+  }
+
+  .whyAcademicsCardContainer,
+  .testimonialsCardContainer,
+  .ourPhilosophyContainer,
+  .homeBlog,
+  .subscribeContainer,
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accCard,
+  .testimonialsCard,
+  .philCard,
+  .footCard,
+  .newsCardSection,
+  .campusVideos,
+  .newsUpdate {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .aboutUsHome {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .aboutUsHomeHeader {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .aboutUsHomeBody {
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  .homeBlog {
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .homeBlog > div {
+    max-width: 100%;
+  }
+
+  .campusVidIcons {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .subForm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subInput, .subButton {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .subInput {
+    height: 3em;
+  }
+
+  .subButton {
+    height: 3em;
+  }
+
+  .subscribeSection {
+    padding: 3rem 2rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+}
+
