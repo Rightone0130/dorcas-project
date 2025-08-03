@@ -14,17 +14,30 @@
   padding-right: 5.5em;
   position: sticky;
   top: 0;
+  align-items: center ;
+  justify-content: space-evenly;
+  gap: 3em;
+}
+
+.MainNavBar{
+  display:    flex;
+  justify-content: space-between;
 }
 
 .navBar {
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  padding-left: 8em;
+  justify-content: space-around;
+  gap: 4.5em;
+  /* width: 90%; */
+  /* align-items: center ; */
+  padding-left: 6em;
+  list-style-type: none;
 }
 
 .navLink {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .socialBar {
