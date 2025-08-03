@@ -40,16 +40,29 @@
   color: black;
 }
 
+
+.allMainHeader{
+text-align: center;
+font-size: 5em;
+}
+
 .socialBar {
   display: flex;
   width: 10%;
   justify-content: space-evenly;
+}
+.socials{
+
+  background-color:rgb(186, 129, 22) ;
+
 }
 
 body {
   background-color: rgb(255, 255, 255);
   font-family: sans-serif;
   width: 100%;
+  margin: 0;
+  
 }
 
 .webLogo {
@@ -496,6 +509,124 @@ footer {
   margin-left: 1em;
   margin-right: 1em;
   text-align: left;
+}
+
+
+
+
+
+
+.ourLecturers{
+  padding: 4rem 4rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  color: rgb(84, 70, 70);
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourLecturersHeader {
+  font-size: 1.8em;
+  margin-left: 2em;
+  border-bottom: 5px solid rgb(186, 129, 22);
+  margin-right: 1.5em;
+  text-align: left;
+  width: fit-content;
+  padding-bottom: 0;
+  height: fit-content;
+  color: black;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+
+.ourLecturersCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ourLectCard {
+  border: 2px solid rgba(75, 75, 75, 0.182);
+  padding: 0em 1.5em 2.7em 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.lecturerCardImage {
+  background-color: aquamarine;
+  max-width: 6.5em;
+  height: 6.5em;
+  margin-top: -3rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 100%;
+}
+
+
+
+.firstSet{
+  padding: 4rem 4rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  color: rgb(84, 70, 70);
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstSetHeader {
+  font-size: 1.8em;
+  margin-left: 2em;
+  border-bottom: 5px solid rgb(186, 129, 22);
+  margin-right: 1.5em;
+  text-align: left;
+  width: fit-content;
+  padding-bottom: 0;
+  height: fit-content;
+  color: black;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+
+.firstSetImage{
+box-sizing: border-box;
+  width: 55em ;
+  height: 45em;
+  border-radius: 2em;
+}
+
+
+.HOD {
+  padding: 4rem 9rem;
+  /* background-color: rgb(169, 119, 26); */
+  display: flex;
+  
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.HODHeader {
+  font-size: 1.8em;
+  border-bottom: 5px solid rgb(186, 129, 22);
+  margin-right: 1.5em;
+  text-align: left;
+  padding-bottom: 0;
+  height: fit-content;
+}
+
+.HODBody {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.HODImage{
+  background-color: aquamarine;
+  max-width: 30.2em;
+  height: 30em;
+  border-radius: 1em;
+
+  /* margin-right: 1em; */
 }
 
 
