@@ -745,63 +745,67 @@ box-sizing: border-box;
 
 
 
-
-
-
-
 @media screen and (max-width: 768px) {
   .mainNav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
+    gap: 1em;
   }
 
   .navBar, .socialBar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     padding: 0;
   }
 
   .navBar {
-    gap: 0.5rem;
+    gap: 1em;
     padding-left: 0;
   }
 
   .socialBar {
     margin-top: 1em;
-    gap: 0.5rem;
+    gap: 1em;
+  }
+
+  .webLogo {
+    width: 2.5em;
   }
 
   .hero {
-    font-size: 2.5em;
+    font-size: 2.3em;
     text-align: center;
-    transform: none;
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
 
   .carousel {
-    width: 100%;
-    margin: 0;
+    background-size: cover;
+    padding: 10em 0;
   }
 
   .whyAcademicsCardContainer,
   .testimonialsCardContainer,
   .ourPhilosophyContainer,
-  .homeBlog,
+  .ourLecturersCardContainer,
+  .firstSetImage,
   .subscribeContainer,
-  .footerContainer {
+  .footerContainer,
+  .HOD {
     flex-direction: column;
     align-items: center;
+    gap: 2em;
+   
   }
 
   .accCard,
   .testimonialsCard,
   .philCard,
   .footCard,
-  .newsCardSection,
-  .campusVideos,
-  .newsUpdate {
+  .ourLectCard,
+  .HODImage {
     width: 100%;
     margin: 1rem 0;
   }
@@ -809,6 +813,7 @@ box-sizing: border-box;
   .aboutUsHome {
     padding: 2rem;
     flex-direction: column;
+    align-items: center;
   }
 
   .aboutUsHomeHeader {
@@ -824,11 +829,16 @@ box-sizing: border-box;
   }
 
   .homeBlog {
-    padding: 2rem;
-    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .homeBlog > div {
+    max-width: 100%;
+  }
+
+  .newsUpdate {
     max-width: 100%;
   }
 
@@ -836,6 +846,10 @@ box-sizing: border-box;
     width: 100%;
     height: auto;
     margin-bottom: 1em;
+  }
+
+  .campusVideos {
+    padding: 0;
   }
 
   .subForm {
@@ -857,12 +871,35 @@ box-sizing: border-box;
   }
 
   .subscribeSection {
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .subscribeHeader {
+    text-align: center;
   }
 
   footer {
     text-align: center;
     padding: 2rem 1rem;
   }
-}
 
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstSetImage {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+  }
+
+  .HODHeader {
+    text-align: center;
+  }
+
+  .HODBody {
+    text-align: justify;
+  }
+}
