@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .mainNav {
@@ -511,6 +513,15 @@ footer {
   text-align: left;
 }
 
+.copywrite{
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+  font-size: 0.93em;
+
+}
+
 
 
 
@@ -627,6 +638,108 @@ box-sizing: border-box;
   border-radius: 1em;
 
   /* margin-right: 1em; */
+}
+
+
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.courses-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 3em;
+  margin-bottom: 4em;
+}
+
+.course-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-us-section {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.contact-us-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.contact-us-form .contact-us-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-us-input,
+.contact-us-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-us-input:focus,
+.contact-us-textarea:focus {
+  border-color: rgb(169, 119, 26);
+  outline: none;
+}
+
+.contact-us-button {
+  width: 100%;
+  padding: 1rem;
+  background-color:rgb(169, 119, 26);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us-button:hover {
+  background-color: rgb(58, 40, 6);
 }
 
 
